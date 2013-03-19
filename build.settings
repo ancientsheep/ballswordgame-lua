@@ -1,0 +1,32 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+	
+	orientation = {
+		default = "portrait",
+		supported = { "portrait", }
+	},
+	
+	iphone = {
+		plist = {
+			UIStatusBarHidden = false,
+			--UIApplicationExitsOnSuspend = true, -- uncomment to quit app on suspend
+
+
+            CFBundleIconFile = "Icon.png",
+            UIPrerenderedIcon = true,
+            CFBundleIconFiles =
+            {
+                "Icon.png", 
+                "Icon@2x.png", 
+                "Icon-72.png", 
+            },
+
+            UIAppFonts = 
+            {
+            	"font1.otf"
+            }
+		}
+	},
+}
